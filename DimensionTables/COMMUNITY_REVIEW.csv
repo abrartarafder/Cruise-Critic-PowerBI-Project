@@ -1,8 +1,0 @@
-REVIEW_ID,RATING,TITLE,DATE,PICTURE,USER_ID,SHIP_NAME,COMPANY_NAME
-9001,4.8,Amazing Caribbean cruise,2024-03-12,rev_9001.jpg,7001,Wonder of the Seas,Royal Caribbean
-9002,4.6,Loved the glacier views,2024-05-10,rev_9002.jpg,7002,Norwegian Encore,Norwegian Cruise Line
-9003,4.4,Great Mediterranean flavors,2024-06-20,rev_9003.jpg,7003,MSC Seaside,MSC Cruises
-9004,4.2,Fun short Bahamas trip,2024-02-25,rev_9004.jpg,7004,Carnival Mardi Gras,Carnival Cruise Line
-9005,5.0,Unforgettable Greek luxury,2024-07-01,rev_9005.jpg,7005,Celebrity Apex,Celebrity Cruises
-9006,4.7,"Great ship, solid value",2024-06-15,rev_9006.jpg,7007,Sky Princess,Princess Cruises
-9007,4.5,"Scenic route, relaxing vibe",2024-04-05,rev_9007.jpg,7006,MS Koningsdam,Holland America Line
