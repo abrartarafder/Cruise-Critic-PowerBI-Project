@@ -69,12 +69,5 @@ The dashboard enables analysis of:
 - Popular destinations and departure ports
 - Rating trends over time
 
----
-
-## Repository Structure
-/sql
-/data
-/powerbi
-/report
 
 
