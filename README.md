@@ -44,9 +44,10 @@ Design and implement a relational database to support core Cruise Critic functio
 The Power BI extension adds an analytical layer on top of the relational database to support business insights and OLAP-style analysis.
 
 ### Tools
-- Power BI  
+- Power BI 
 - SQL  
-- DAX  
+- DAX
+- DBML
 
 ### Data Model
 - **Fact Table:** FACT_CRUISE_ANALYTICS  
