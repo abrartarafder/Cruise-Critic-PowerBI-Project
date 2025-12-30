@@ -1,0 +1,174 @@
+// Database: EECS3421_DB_Abrar
+// Cruise Critic Booking System
+// Converted from SQL to DBML
+
+Table CRUISE_LINE {
+  COMPANY_NAME varchar(50) [pk, not null]
+  LOGO varchar(100)
+  FLEET_SIZE int
+  REVIEW_ARTICLE varchar(200)
+  RATING numeric(3,1)
+  ENTERTAINMENT varchar(200)
+  IMAGES varchar(200)
+}
+
+Table CRUISE_SHIP {
+  SHIP_NAME varchar(50) [pk, not null]
+  YEAR_LAUNCHED int
+  CREW_COUNT int
+  CAPACITY int
+  PASSENGER_CREW_RATIO numeric(5,2)
+  ITINERARY varchar(200)
+  SHIP_RATING numeric(3,1)
+  AMENITIES varchar(200)
+  SHORE_EXCURSIONS int
+  SHIP_IMAGES varchar(200)
+  COMPANY_NAME varchar(50) [not null]
+}
+
+Table CRUISE_TRIP {
+  TRIP_ID int [pk, not null]
+  TRIP_NAME varchar(100)
+  DEPARTURE_PORT varchar(100)
+  DESTINATIONS varchar(200)
+  DURATION int
+  PRICE numeric(8,2)
+  ORIENTATION varchar(50)
+  TRIP_IMAGES varchar(200)
+  SHIP_NAME varchar(50) [not null]
+  COMPANY_NAME varchar(50) [not null]
+}
+
+Table DESTINATION {
+  NAME varchar(100) [pk, not null]
+  DESTINATION_SUMMARY varchar(300)
+  DESTINATION_TYPE varchar(50)
+  IMAGES varchar(200)
+}
+
+Table PORT {
+  PORT_ID int [pk, not null]
+  PORT_NAME varchar(100)
+  DEPARTURE_LOCATION varchar(100)
+  PORT_IMAGES varchar(200)
+  TRIP_ID int [not null]
+  NAME varchar(100) [not null]
+}
+
+Table CRUISE_DEAL {
+  DEAL_ID int [pk, not null]
+  PRICE numeric(8,2)
+  DURATION int
+  IMAGE varchar(200)
+  TRAVEL_AGENCY_LINK varchar(200)
+  COMPANY_NAME varchar(50) [not null]
+  TRIP_ID int [not null]
+}
+
+Table USER_ACCOUNT {
+  USER_ID int [pk, not null]
+  USERNAME varchar(50) [unique, not null]
+  DATE_JOINED date
+  POST_COUNT int
+  BADGES varchar(100)
+  PASSWORD varchar(100) [not null]
+}
+
+Table FORUM {
+  FORUM_ID int [pk, not null]
+  USER_ID int [not null]
+  FORUM_TITLE varchar(100)
+  CATEGORY varchar(50)
+  TIME_STAMP datetime
+}
+
+Table COMMUNITY_REVIEW {
+  REVIEW_ID int [pk, not null]
+  RATING numeric(3,1)
+  TITLE varchar(100)
+  DATE date
+  PICTURE varchar(200)
+  USER_ID int [not null]
+  SHIP_NAME varchar(50) [not null]
+  COMPANY_NAME varchar(50) [not null]
+}
+
+Table ADVICE {
+  ADVICE_ID int [pk, not null]
+  CRUISE_TIPS varchar(200)
+  CRUISE_NEWS varchar(200)
+  REVIEW_ID int [not null]
+}
+
+Table CRUISE_TRIP_STYLE {
+  STYLE varchar(50) [not null]
+  TRIP_ID int [not null]
+  Note: 'Composite primary key (STYLE, TRIP_ID)'
+}
+
+Table CRUISE_ITINERARY {
+  ITINERARY_ID int [pk, not null]
+  TRIP_ID int [not null]
+  MAP varchar(200)
+  PORT varchar(100)
+  TOTALDAYS int
+}
+
+Table VISITS {
+  ITINERARY_ID int [not null]
+  TRIP_ID int [not null]
+  NAME varchar(100) [not null]
+  Note: 'Composite primary key (ITINERARY_ID, TRIP_ID, NAME)'
+}
+
+Table CRUISE_SHIP_CABIN {
+  CABIN int [pk, not null]
+  SHIP_NAME varchar(50) [not null]
+}
+
+Table CRUISE_TRIP_EXCURSIONS {
+  EXCURSIONS varchar(100) [pk, not null]
+  TRIP_ID int [not null]
+}
+
+Table APPLIES_TO {
+  DEAL_ID int [not null]
+  ITINERARY_ID int [not null]
+  TRIP_ID int [not null]
+  Note: 'Composite primary key (DEAL_ID, ITINERARY_ID, TRIP_ID)'
+}
+
+Table DISCUSSES {
+  FORUM_ID int [not null]
+  USER_ID int [not null]
+  REVIEW_ID int [not null]
+  Note: 'Composite primary key (FORUM_ID, USER_ID, REVIEW_ID)'
+}
+
+// Relationships
+
+Ref: CRUISE_SHIP.COMPANY_NAME > CRUISE_LINE.COMPANY_NAME
+Ref: CRUISE_TRIP.SHIP_NAME > CRUISE_SHIP.SHIP_NAME
+Ref: CRUISE_TRIP.COMPANY_NAME > CRUISE_LINE.COMPANY_NAME
+Ref: PORT.TRIP_ID > CRUISE_TRIP.TRIP_ID
+Ref: PORT.NAME > DESTINATION.NAME
+Ref: CRUISE_DEAL.COMPANY_NAME > CRUISE_LINE.COMPANY_NAME
+Ref: CRUISE_DEAL.TRIP_ID > CRUISE_TRIP.TRIP_ID
+Ref: FORUM.USER_ID > USER_ACCOUNT.USER_ID
+Ref: COMMUNITY_REVIEW.USER_ID > USER_ACCOUNT.USER_ID
+Ref: COMMUNITY_REVIEW.SHIP_NAME > CRUISE_SHIP.SHIP_NAME
+Ref: COMMUNITY_REVIEW.COMPANY_NAME > CRUISE_LINE.COMPANY_NAME
+Ref: ADVICE.REVIEW_ID > COMMUNITY_REVIEW.REVIEW_ID
+Ref: CRUISE_TRIP_STYLE.TRIP_ID > CRUISE_TRIP.TRIP_ID
+Ref: CRUISE_ITINERARY.TRIP_ID > CRUISE_TRIP.TRIP_ID
+Ref: VISITS.ITINERARY_ID > CRUISE_ITINERARY.ITINERARY_ID
+Ref: VISITS.TRIP_ID > CRUISE_TRIP.TRIP_ID
+Ref: VISITS.NAME > DESTINATION.NAME
+Ref: CRUISE_SHIP_CABIN.SHIP_NAME > CRUISE_SHIP.SHIP_NAME
+Ref: CRUISE_TRIP_EXCURSIONS.TRIP_ID > CRUISE_TRIP.TRIP_ID
+Ref: APPLIES_TO.DEAL_ID > CRUISE_DEAL.DEAL_ID
+Ref: APPLIES_TO.ITINERARY_ID > CRUISE_ITINERARY.ITINERARY_ID
+Ref: APPLIES_TO.TRIP_ID > CRUISE_TRIP.TRIP_ID
+Ref: DISCUSSES.FORUM_ID > FORUM.FORUM_ID
+Ref: DISCUSSES.USER_ID > USER_ACCOUNT.USER_ID
+Ref: DISCUSSES.REVIEW_ID > COMMUNITY_REVIEW.REVIEW_ID
