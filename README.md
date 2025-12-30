@@ -59,7 +59,7 @@ The STAR schema is shown below:
 
 ![Cruise Analytics Star Schema](PowerBIModelling/StarSchema.png)
 
-
+The PowerBI Dashboard metrics are created based off of the STAR Schema
 
 ### Key Metrics
 - Average Rating  
