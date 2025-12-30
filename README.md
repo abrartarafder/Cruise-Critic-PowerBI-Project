@@ -47,7 +47,7 @@ The Power BI extension adds an analytical layer on top of the relational databas
 - Power BI 
 - SQL  
 - DAX
-- DataBase Markup Language
+- Database Markup Language
 
 ### Data Model
 - **Fact Table:** FACT_CRUISE_ANALYTICS  
