@@ -1,0 +1,9 @@
+TRIP_ID,TRIP_NAME,DEPARTURE_PORT,DESTINATIONS,DURATION,PRICE,ORIENTATION,TRIP_IMAGES,SHIP_NAME,COMPANY_NAME
+4101,Eastern Caribbean Adventure,Miami,"Bahamas, St. Thomas, St. Maarten",7,1299.99,Caribbean focus itinerary,trip_4101.jpg,Wonder of the Seas,Royal Caribbean
+4102,Alaskan Glacier Voyage,Seattle,"Ketchikan, Juneau, Skagway",7,1599.0,Alaska glacier sightseeing,trip_4102.jpg,Norwegian Encore,Norwegian Cruise Line
+4103,Mediterranean Odyssey,Barcelona,"Rome, Naples, Athens",10,1899.5,Mediterranean culture highlights,trip_4103.jpg,MSC Seaside,MSC Cruises
+4104,Bahamas Getaway,Port Canaveral,"Nassau, Half Moon Cay",5,899.99,Short tropical escape,trip_4104.jpg,Carnival Mardi Gras,Carnival Cruise Line
+4105,Greek Isles Luxury,Athens,"Santorini, Mykonos, Crete",8,2099.99,Europe island hopping,trip_4105.jpg,Celebrity Apex,Celebrity Cruises
+4106,Western Caribbean Explorer,Fort Lauderdale,"Cozumel, Roatan, Costa Maya",7,1199.0,Caribbean beaches and culture,trip_4106.jpg,Wonder of the Seas,Royal Caribbean
+4107,Inside Passage Highlights,Vancouver,"Victoria, Ketchikan, Juneau",7,1699.0,Scenic Alaska route,trip_4107.jpg,MS Koningsdam,Holland America Line
+4108,Italian Riviera & Islands,Rome,"Florence, Naples, Sicily",9,2199.0,Italy coastal classics,trip_4108.jpg,Sky Princess,Princess Cruises
