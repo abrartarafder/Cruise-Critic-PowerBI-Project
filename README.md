@@ -54,6 +54,13 @@ The Power BI extension adds an analytical layer on top of the relational databas
 
 **Grain:** One row per cruise deal per trip.
 
+The STAR schema is shown below:
+(Note the surrogate keys for each DIMENSION table and the FACT table)
+
+![Cruise Analytics Star Schema](PowerBIModelling/StarSchema.png)
+
+
+
 ### Key Metrics
 - Average Rating  
 - Average Price  
