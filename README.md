@@ -87,11 +87,17 @@ All relationships are configured as **many-to-one**, with **single-direction fil
 
 ## Dashboard 1
 The first dashboard enables analysis of:
-- Estimated Cost (the rough approximation is given by assuming that 60% of the total revenue is cost).
-- Estimated Profit (the rough approximation is given by assuming that 40% of the total revenue is profit). 
-- Total Amount Spent on Cruises by Year
-- Estimated Profit by Company Name
-- Visual of Destination
+- Estimated Profit (approximated as 40% of Total Revenue).
+- Total Revenue (Amount Spent) by Year (trend across 2019–2025).
+- Estimated Cost (approximated as 60% of Total Revenue).
+- Top Cruise Line (Cruise Line with the Highest Revenue).
+- Total Deals by Year.
+- Average Price Per Deal.
+- Worst Cruise Line (Cruise Line with the Lowest Revenue).
+- Estimated Profit by Cruise Line (comparison across companies).
+- - Estimated Profit by Trip Duration.
+- Destination Overview (map visualization highlighting the most visited destination and enabling destination-based filtering).
+- Most Visited Destination.
 
 ![Cruise Analytics Star Schema](PowerBIModelling/dashboard1.png)
 
