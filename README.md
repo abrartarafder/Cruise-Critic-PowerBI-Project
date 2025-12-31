@@ -62,6 +62,10 @@ The STAR schema is shown below:
 
 The PowerBI Dashboard metrics are created based off of the STAR Schema
 
+### Power BI Data Model Implementation
+The analytical model follows a star schema design using surrogate keys conceptually for all dimensions. In the Power BI implementation, stable natural keys (Trip ID, Company Name, Ship Name, Destination Name, and Review Date) are used directly to define relationships between the fact and dimension tables. This approach is sufficient given the static nature of the dataset and avoids unnecessary ETL complexity while preserving the integrity of the star schema.
+
+
 ### Key Metrics
 - Average Rating  
 - Average Price  
