@@ -95,7 +95,7 @@ The first dashboard enables analysis of:
 - Average Price Per Deal.
 - Worst Cruise Line (Cruise Line with the Lowest Revenue).
 - Estimated Profit by Cruise Line (comparison across companies).
-- - Estimated Profit by Trip Duration.
+- Estimated Profit by Trip Duration.
 - Destination Overview (map visualization highlighting the most visited destination and enabling destination-based filtering).
 - Most Visited Destination.
 
