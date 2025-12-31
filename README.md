@@ -84,21 +84,16 @@ All relationships are configured as **many-to-one**, with **single-direction fil
 
 ![Cruise Analytics Star Schema](PowerBIModelling/PowerBISchema.png)
 
-### Key Metrics
-- Average Rating  
-- Average Price  
-- Price per Day  
-- Trip Duration  
 
----
-
-## Dashboard Insights
-The dashboard enables analysis of:
+## Dashboard 1
+The first dashboard enables analysis of:
 - Estimated Cost (the rough approximation is given by assuming that 60% of the total revenue is cost).
 - Estimated Profit (the rough approximation is given by assuming that 40% of the total revenue is profit). 
 - Total Amount Spent on Cruises by Year
 - Estimated Profit by Company Name
 - Visual of Destination
+
+- 
 
 
 
