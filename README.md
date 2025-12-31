@@ -60,10 +60,10 @@ The STAR schema is shown below:
 
 ![Cruise Analytics Star Schema](PowerBIModelling/StarSchema.png)
 
-The PowerBI Dashboard metrics are created based off of the STAR Schema
+The PowerBI Dashboard metrics are created based on the STAR Schema.
 
 ### Power BI Data Model Implementation
-The analytical model follows a star schema design using surrogate keys conceptually for all dimensions. In the Power BI implementation, stable natural keys (Trip ID, Company Name, Ship Name, Destination Name, and Review Date) are used directly to define relationships between the fact and dimension tables. This approach is sufficient given the static nature of the dataset and avoids unnecessary ETL complexity while preserving the integrity of the star schema.
+The analytical model follows a star schema design using the surrogate keys conceptually for all dimensions. In the Power BI implementation, stable natural keys (Trip ID, Company Name, Ship Name, Destination Name, and Review Date) are used directly to define relationships between the fact and dimension tables. This approach is sufficient given the dataset's static nature and avoids unnecessary ETL complexity while preserving the integrity of the star schema.
 
 - `FACT_CRUISE_ANALYTICS[REVIEW_DATE]`
   → `DIM_DATE[Full_Date]`
@@ -94,10 +94,11 @@ All relationships are configured as **many-to-one**, with **single-direction fil
 
 ## Dashboard Insights
 The dashboard enables analysis of:
-- Best-value cruise lines (price vs rating)
-- Premium vs budget cruise offerings
-- Popular destinations and departure ports
-- Rating trends over time
+- Estimated Cost (the rough approximation is given by assuming that 60% of the total revenue is cost).
+- Estimated Profit (the rough approximation is given by assuming that 40% of the total revenue is profit). 
+- Total Amount Spent on Cruises by Year
+- Estimated Profit by Company Name
+- Visual of Destination
 
 
 
