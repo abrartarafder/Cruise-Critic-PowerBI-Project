@@ -93,7 +93,7 @@ The first dashboard enables analysis of:
 - Estimated Profit by Company Name
 - Visual of Destination
 
-- 
+![Cruise Analytics Star Schema](PowerBIModelling/dashboard-1.png)
 
 
 
