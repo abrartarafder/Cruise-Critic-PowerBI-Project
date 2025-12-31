@@ -82,6 +82,7 @@ The analytical model follows a star schema design using surrogate keys conceptua
 
 All relationships are configured as **many-to-one**, with **single-direction filtering** from dimensions to the fact table.
 
+![Cruise Analytics Star Schema](PowerBIModelling/PowerBISchema.png)
 
 ### Key Metrics
 - Average Rating  
