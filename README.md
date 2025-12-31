@@ -62,6 +62,28 @@ The STAR schema is shown below:
 
 The PowerBI Dashboard metrics are created based off of the STAR Schema
 
+### Power BI Data Model Implementation
+The analytical model follows a star schema design using surrogate keys conceptually for all dimensions. In the Power BI implementation, stable natural keys (Trip ID, Company Name, Ship Name, Destination Name, and Review Date) are used directly to define relationships between the fact and dimension tables. This approach is sufficient given the static nature of the dataset and avoids unnecessary ETL complexity while preserving the integrity of the star schema.
+
+- `FACT_CRUISE_ANALYTICS[REVIEW_DATE]`
+  → `DIM_DATE[Full_Date]`
+
+- `FACT_CRUISE_ANALYTICS[TRIP_ID]`
+  → `DIM_CRUISE_TRIP[TRIP_ID]`
+
+- `FACT_CRUISE_ANALYTICS[COMPANY_NAME]`
+  → `DIM_CRUISE_LINE[COMPANY_NAME]`
+
+- `FACT_CRUISE_ANALYTICS[SHIP_NAME]`
+  → `DIM_CRUISE_SHIP[SHIP_NAME]`
+
+- `FACT_CRUISE_ANALYTICS[DESTINATION_NAME]`
+  → `DIM_DESTINATION[DESTINATION_NAME]`
+
+All relationships are configured as **many-to-one**, with **single-direction filtering** from dimensions to the fact table.
+
+![Cruise Analytics Star Schema](PowerBIModelling/PowerBISchema.png)
+
 ### Key Metrics
 - Average Rating  
 - Average Price  
