@@ -1,6 +1,6 @@
 # Cruise Critic Database & Analytics Project
 
-Collaborators: Abrar Tarafder, Ekam Momi, Shoumik Ahmed
+**Collaborators: Abrar Jawad Tarafder, Ekambir Momi, Shoumik Ahmed**
 
 ## Overview
 This project is based on a completed **EECS 3421 – Database Systems** group project that designed and implemented a relational database for a simplified **Cruise Critic** cruise booking and review platform.  
