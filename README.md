@@ -103,5 +103,5 @@ The first dashboard enables analysis of:
 
 ![Cruise Analytics Star Schema](PowerBIModelling/dashboard1.png)
 
-
+Other dashboards being worked on
 
