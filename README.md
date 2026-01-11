@@ -111,6 +111,7 @@ This dashboard enables analysis of:
 - Estimated Profit (approximated as 40% of Total Revenue).
 - Estimated Cost (approximated as 60% of Total Revenue).
 - Total Amount Spent on Cruises by Year (2019–2025).
+- Year Slicer
 - Average Price per Deal.
 - Best and Worst Cruise Lines by Revenue.
 - Estimated Profit by Cruise Line.
