@@ -104,7 +104,6 @@ The first dashboard enables analysis of:
 ![Cruise Analytics Star Schema](PowerBIModelling/dashboard1.png)
 
 ## Dashboard 2
-## Dashboard 2
 
 The second dashboard focuses on destination-level and contextual insights, allowing users to explore cruise performance alongside environmental and location-based factors. It highlights how revenue, profitability, and demand change across destinations and over time.
 
