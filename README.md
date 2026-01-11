@@ -102,6 +102,7 @@ The first dashboard enables analysis of:
 - Most Visited Destination.
 
 ![Cruise Analytics Star Schema](PowerBIModelling/dashboard1.png)
+![Cruise Analytics Star Schema](PowerBIModelling/dashboard2.png)
 
 Other dashboards being worked on
 
