@@ -124,5 +124,21 @@ Dashboard 2 complements Dashboard 1 by shifting the focus from overall financial
 
 ![Cruise Analytics Star Schema](PowerBIModelling/dashboard2.png)
 
-Other dashboards being worked on..
 
+## Dashboard 3
+
+The third dashboard provides a deeper analytical view of cruise performance by integrating financial trends, destination characteristics, customer ratings, and environmental conditions. It is designed to support multi-dimensional analysis across time, cruise lines, and destinations.
+
+This dashboard enables analysis of:
+- Total Amount Spent on Cruises by Year (2019–2025) to evaluate long-term revenue patterns.
+- Average Temperature by Destination to analyze destination seasonality and climate influence.
+- Cruise Ratings Over the Years to track changes in customer satisfaction over time.
+- Estimated Profit by Cruise Line for comparative profitability analysis.
+- Table of Environmental Conditions by Year, including Rain Impact and Sea Condition classifications.
+- Year-based filtering to isolate specific periods for focused analysis.
+- Interactive cross-filtering across all visuals to explore relationships between spending, destination climate, environmental factors, and customer ratings.
+
+Dashboard 3 complements Dashboards 1 and 2 by extending the analysis beyond core financial KPIs into customer experience and environmental context, enabling more nuanced insights into factors influencing cruise demand and performance.
+
+
+![Cruise Analytics Star Schema](PowerBIModelling/dashboard3.png)
