@@ -102,7 +102,27 @@ The first dashboard enables analysis of:
 - Most Visited Destination.
 
 ![Cruise Analytics Star Schema](PowerBIModelling/dashboard1.png)
+
+## Dashboard 2
+## Dashboard 2
+
+The second dashboard focuses on destination-level and contextual insights, allowing users to explore cruise performance alongside environmental and location-based factors. It highlights how revenue, profitability, and demand change across destinations and over time.
+
+This dashboard enables analysis of:
+- Estimated Profit (approximated as 40% of Total Revenue).
+- Estimated Cost (approximated as 60% of Total Revenue).
+- Total Amount Spent on Cruises by Year (2019–2025).
+- Average Price per Deal.
+- Best and Worst Cruise Lines by Revenue.
+- Estimated Profit by Cruise Line.
+- Average Travel Temperature (°C) by destination and year.
+- Weather Impact indicator (Rain Impact classification).
+- Destination overview using an interactive map visualization.
+- Destination-based filtering that dynamically updates all KPIs and visuals.
+
+Dashboard 2 complements Dashboard 1 by shifting the focus from overall financial trends to destination-aware analysis, helping users understand how location, climate conditions, and seasonal factors intersect with cruise demand and profitability.
+
 ![Cruise Analytics Star Schema](PowerBIModelling/dashboard2.png)
 
-Other dashboards being worked on
+Other dashboards being worked on..
 
